@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul id="side-menu">
+                <li><a href=".about">About</a></li>
+                <li><a href=".resume">Resume</a></li>
+                <li><a href=".projects">Projects</a></li>
+                <li><a href=".contact">Contact</a></li>
+                <i class='bx bx-x' onclick="closeMenu()"></i>
+            </ul>
+            <i class='bx bx-menu' onclick="openMenu()"></i>
+        </nav>
+    </header>
+
+    <table>
+        <tr>
+            <td class="profile">
+                <div class="curve"></div>
+                <img src="profile.jpeg" >
+            </td>
+            <td>
+                <h1>Hi! I'm Gayathri Jayan</h1>
+                <p class="typing-effect">Welcome to My Portfolio :)</p>
+            </td>
+        </tr>
+    </table>
+    <section class="about">
+        <div class="about-col1">About</div>
+        <div class="about-col2">
+            <p>I am an undergraduate Computer Science and Engineering student passionate about coding, problem-solving, and learning new technologies. I enjoy working on projects that challenge me to grow and make a meaningful impact.</p>
+            <div>
+                <button class="btn-edu" onclick="showEdu()">Education</button>
+                <button class="btn-skill" onclick="showSkills()">Skills</button>
+            </div>
+            <div id="edu-text">
+                <span class="btn-header"><strong>EDUCATION:</strong></span><br>
+                <ul>
+                    <li>
+                        <p>
+                            <span class="institute">RV Institute of Technology and Management</span><br>
+                            BE in Computer Science and Engineering<br>
+                            2022 - 2026<br>
+                            <span class="marks">CGPA: 9.6</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="institute">Christ Academy Junior College</span><br>
+                            CBSE - 12th Grade<br>
+                            2020 - 2022<br>
+                            <span class="marks">Percentage: 94.2</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="institute">Ryan International School</span><br>
+                            ICSE - 10th Grade<br>
+                            2009 - 2020<br>
+                            <span class="marks">Percentage: 96.33</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="skill-text">
+                <span class="btn-header"><strong>PROGRAMMING LANGUAGES:</strong></span><br>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>MySQL</li>
+                </ul>
+                <span class="btn-header"><strong>OTHER TECHNICAL SKILLS:</strong></span><br>
+                <ul>
+                    <li>Data Structures</li>
+                    <li>Algorithm</li>
+                    <li>Basics of AIML</li>
+                    <li>Git</li>
+                </ul>
+                <span class="btn-header"><strong>SOFT SKILLS:</strong></span><br>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Creativity</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="resume">
+        <h2>Resume</h2>
+        <div id="resume-btns">
+            <a href="resume.pdf" target="_blank">
+                <button class="btn-view">View My Resume</button>
+            </a>
+            <a href="resume.pdf" download>
+                <button class="btn-download">Download My Resume</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div class="projects-col1">
+                <div><h3>PROXY SERVER WITH CACHING AND CONCURRENCY</h3></div>
+                <img src="project-proxy.jpeg">
+                <div class="layer">
+                    <a href="https://github.com/gaya3jayan-11/SudokuSolver-MobileApplication"><i class='bx bx-link-external'></i></a><br>
+                    <p>A proxy server for optimized request handling and faster response times</p>
+                </div>
+            </div>
+            <div class="projects-col2">
+                <div><h3>SUDOKU SOLVER MOBILE APPLICATION</h3></div>
+                <img src="project-sudoku.png">
+                <div class="layer">
+                    <a href="https://github.com/gaya3jayan-11/SudokuSolver-MobileApplication"><i class='bx bx-link-external'></i></a><br>
+                    <p>A mobile app for solving Sudoku puzzles using backtracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h3>Contact Me</h3>
+        <div class="details">
+            <p>
+                <span class="header">Phone No.:</span> <span class="content">+91 8904481046</span>
+            </p>
+            <p>
+                <span class="header">Email ID:</span> <a href="mailto:gayatrijayan2003@gmail.com" class="content" style="text-decoration: none;">gayatrijayan2003@gmail.com</span>
+            </p>
+        </div>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/gaya3jayan/"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://github.com/gaya3jayan-11"><i class='bx bxl-github' ></i></a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
