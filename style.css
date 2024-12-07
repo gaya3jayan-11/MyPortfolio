@@ -498,6 +498,10 @@ nav .bx{
                   linear-gradient(to bottom, #15001e, #050258);
       background-attachment: fixed;
     }
+    body{
+        align-items: center;
+        justify-content: center;
+    }
 
     .menu .bx{
         display:block;
@@ -512,18 +516,18 @@ nav .bx{
         color:rgb(96, 60, 2);
         position: absolute;
         top:25px;
-        left:25px;
+        right:25\0px;
         cursor:pointer;
     }
 
     .menu ul{
-        background: linear-gradient(to left, beige, rgb(255, 221, 96));
+        background: linear-gradient(to right, transparent, rgb(255, 221, 96));
         position:fixed;
         top:0;
         right:-200px;
         opacity:0;
-        width:200px;
-        height:100vh;
+        width:150px;
+        height:100%;
         padding-top:50px;
         flex-direction: column;
         z-index:2;
@@ -532,10 +536,14 @@ nav .bx{
 
     .menu ul li{
         display: block;
+        text-align: right;
         margin:25px;
+        padding-right: 20px;
     }
     .menu ul li a {
         color: rgb(96, 60, 2);
+        font-size: 16px;
+        font-weight: bold;
     }
   
     table {
@@ -578,10 +586,6 @@ nav .bx{
   
     .menu ul li {
       margin-right: 10px;
-    }
-  
-    .menu ul li a {
-      font-size: 12px; 
     }
   
     table{
